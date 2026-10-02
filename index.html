@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f6eee3">
+  <title>Devika & Sachin — Wedding Invitation</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500;600&family=Pinyon+Script&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===================== LUXURY OPENING ===================== -->
+  <section class="intro" id="intro">
+    <div class="intro-wash"></div>
+    <div class="intro-leaf intro-leaf-left">❧</div>
+    <div class="intro-leaf intro-leaf-right">❧</div>
+
+    <div class="intro-inner">
+      <p class="micro">a little note · just for you</p>
+
+      <h1 class="cover-names">
+        <span>Devika</span>
+        <small>&amp;</small>
+        <span>Sachin</span>
+      </h1>
+
+      <p class="cover-date">23 · 12 · 2026</p>
+
+      <div class="luxury-envelope" id="envelope">
+        <div class="envelope-paper"></div>
+        <div class="envelope-letter">
+          <span>YOU ARE INVITED</span>
+          <b>to our wedding</b>
+        </div>
+        <div class="envelope-fold fold-left"></div>
+        <div class="envelope-fold fold-right"></div>
+        <div class="envelope-flap"></div>
+
+        <button class="wax-seal" id="openSeal" aria-label="Open the invitation">
+          <span class="seal-monogram">D <i>&amp;</i> S</span>
+          <span class="seal-ornament">❧</span>
+        </button>
+      </div>
+
+      <button class="open-instruction" id="openLabel">
+        <span>tap the seal</span>
+        <strong>Open the invitation</strong>
+        <em>⌄</em>
+      </button>
+    </div>
+  </section>
+
+  <!-- ===================== INVITATION ===================== -->
+  <main class="invitation" id="invitation" aria-hidden="true">
+
+    <div class="grain"></div>
+    <div class="petals" id="petals"></div>
+
+    <button class="music-control" id="musicButton" aria-label="Play music">
+      <span class="music-note">♫</span>
+      <span id="musicText">play music</span>
+    </button>
+
+    <div class="youtube-music" aria-hidden="true">
+      <iframe
+        id="youtubePlayer"
+        title="Pesamale by Siri Xander"
+        src="https://www.youtube.com/embed/4r9r6Fhm9I0?enablejsapi=1&playsinline=1&controls=0&rel=0&loop=1&playlist=4r9r6Fhm9I0"
+        allow="autoplay; encrypted-media; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <!-- HERO / SAME STORYBOARD FEEL AS REFERENCE -->
+    <section class="hero page-section reveal">
+      <p class="micro">together with our families</p>
+
+      <h2 class="script-names">
+        <span>Devika</span>
+        <small>&amp;</small>
+        <span>Sachin</span>
+      </h2>
+
+      <p class="married">are getting married.</p>
+
+      <div class="flourish">♡ ✦ ♡</div>
+
+      <p class="hero-message">
+        Come celebrate, laugh, eat<br>
+        and make memories with us.
+      </p>
+
+      <div class="date-pills">
+        <span>WED</span>
+        <b>23 DECEMBER 2026</b>
+      </div>
+
+      <div class="hero-actions">
+        <button class="saveDateButton">＋ Save the date</button>
+        <button class="shareButton">Share ↗</button>
+      </div>
+
+      <div class="couple-art">
+        <img src="couple-illustration.png" alt="Illustration of Devika and Sachin">
+      </div>
+
+      <div class="scroll-note">scroll <span>↓</span></div>
+    </section>
+
+    <!-- FULL-WIDTH RUNNING BANNER -->
+    <div class="ribbon-wrap" aria-label="Devika and Sachin wedding banner">
+      <div class="ribbon">
+        <div class="ribbon-track">
+          <span>DEVIKA &amp; SACHIN</span><i>✦</i>
+          <span>23 DECEMBER 2026</span><i>✦</i>
+          <span>DIFFERENT CHAPTERS · SAME LOVE</span><i>✦</i>
+          <span>DEVIKA &amp; SACHIN</span><i>✦</i>
+          <span>23 DECEMBER 2026</span><i>✦</i>
+          <span>DIFFERENT CHAPTERS · SAME LOVE</span><i>✦</i>
+          <span>DEVIKA &amp; SACHIN</span><i>✦</i>
+          <span>23 DECEMBER 2026</span><i>✦</i>
+        </div>
+      </div>
+    </div>
+
+    <!-- COUNTDOWN -->
+    <section class="page-section countdown-section reveal">
+      <p class="micro">the wait</p>
+      <h2 class="section-title">Counting down<br><em>to the muhurtham</em></h2>
+
+      <div class="countdown">
+        <div><b id="days">00</b><span>days</span></div>
+        <div><b id="hours">00</b><span>hours</span></div>
+        <div><b id="minutes">00</b><span>minutes</span></div>
+        <div><b id="seconds">00</b><span>seconds</span></div>
+      </div>
+
+      <div class="calendar">
+        <div class="calendar-head"><span>DECEMBER</span><b>2026</b></div>
+        <div class="calendar-grid" id="calendarGrid"></div>
+      </div>
+
+      <div class="save-copy">
+        <p class="micro">save this date</p>
+        <p>One beautiful day. Tap the highlighted date to jump to the details.</p>
+        <a class="date-chip" href="#details"><b>23 Dec · Wedding</b><span>11:28 AM · Taliparamba, Kannur</span></a>
+      </div>
+    </section>
+
+    <!-- WHEN & WHERE -->
+    <section class="page-section details-section reveal" id="details">
+      <p class="micro">one moment · one day</p>
+      <h2 class="section-title">When &amp; where</h2>
+
+      <div class="event-card">
+        <div class="event-top">
+          <span>01</span>
+          <p>wednesday · 23 dec</p>
+        </div>
+
+        <h3>Wedding Ceremony</h3>
+        <p class="event-time">Muhurtham · 11:28 AM – 12:05 PM</p>
+
+        <ul class="timeline">
+          <li><span></span>Guests arrive</li>
+          <li><span></span>Muhurtham <b>· 11:28 AM</b></li>
+          <li><span></span>Lunch to follow</li>
+        </ul>
+
+        <div class="venue-box">
+          <p class="micro">venue</p>
+          <div class="venue-icon">🏛</div>
+          <b>Hajimus Convention Centre</b>
+          <small>Taliparamba, Kannur, Kerala</small>
+          <a href="https://www.google.com/maps/search/?api=1&query=Hajimus+Convention+Centre+Taliparamba" target="_blank" rel="noopener">Get directions →</a>
+        </div>
+      </div>
+
+      <div class="directions-note">♡ &nbsp; ✦ &nbsp; ♡</div>
+    </section>
+
+    <!-- CLOSING -->
+    <section class="page-section closing-section reveal">
+      <div class="flourish">♡ ✦ ♡</div>
+      <p class="closing-names">Devika &amp; Sachin</p>
+      <p class="closing-message">Dress up, show up, celebrate with us.<br>We can't wait to see you.</p>
+      <div class="hero-actions">
+        <button class="saveDateButton">＋ Save the date</button>
+        <button class="shareButton">Share ↗</button>
+      </div>
+      <p class="final-date">23 · 12 · 2026</p>
+    </section>
+
+    <footer>Devika &amp; Sachin · forever starts here</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
